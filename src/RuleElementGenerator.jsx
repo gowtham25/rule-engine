@@ -5,7 +5,6 @@ import RuleRowGenerator from './RuleRowGenerator';
 
 const RuleElementGenerator = ({ ruleData, isFirst, addRule, addGroup, changeCondition, deleteRule }) => {
     const { rules, id, value, combinator } = ruleData || {};
-    console.log("combinator:", combinator);
     return (
         <ul className='tree'>
             <GenerateHeader

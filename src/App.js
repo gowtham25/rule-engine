@@ -5,8 +5,6 @@ import RuleElementGenerator from './RuleElementGenerator';
 const idGenerator = () => Math.floor(Math.random() * 90000) + 10000;
 
 function App() {
-
-
 	const [ruleData, setRuleData] = useState({
 		"id": idGenerator(),
 		"rules": [],
