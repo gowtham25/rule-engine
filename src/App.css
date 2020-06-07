@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tree {
+	margin: 10px 0;
+}
+.header-li {
+	display: flex;
+	flex-direction: row;
+	left: 27px;
+    position: relative;
+}
+.header-li select, .header-li button {
+	margin-right: 10px;
+}
+li:not(.header-li) {
+	display: flex;
+	position: relative;
+    left: 59px;
+    margin: 12px 0 0 9px;
+}
+.delete-rule {
+	border-radius: 18px;
+	outline: none;
+}
+
+button {
+  	cursor: pointer;
+}
+
+.rule-row select, input {
+	margin-right: 10px;
+}
+.rule-row select {
+	margin-right: 10px;
+    min-width: 170px;
+    height: 35px;
+}
+.rule-row {
+	width: 60%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.rule-engine-container {
+	width: 90%;
+	overflow: scroll;
+    margin: auto;
+}
+
+.delete-rule {
+	border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.add-rule, .add-group, .submit-data {
+	padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+    color: #fff;
+	background-color: #1976d2;
+	border: none;
+    outline: none;
+}
+
+.condition-select {
+	width: 70px;
+}
+
+.submit-data {
+	background: #28a745;
+}
+
+.button-container {
+	width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
